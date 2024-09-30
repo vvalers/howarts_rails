@@ -61,10 +61,7 @@ development:
 test:
   <<: *default
   database: howarts_rails_test
-  username: postgres
-  password: dogo
-  port: 5432
-  socket: /var/run/postgresql
+
 
 
 # As with config/credentials.yml, you never want to store sensitive information,
@@ -90,5 +87,5 @@ test:
 production:
   <<: *default
   database: howarts_rails_production
-  username: howarts_rails
-  password: <%= ENV["HOWARTS_RAILS_DATABASE_PASSWORD"] %>
+  username: postgres
+  password: dogo
